@@ -98,7 +98,7 @@ ul {
 @media only screen and (min-width: 321px) {
   .todo_input {
     margin: 0;
-    width: 100%;
+    width: 98%;
     border: 1.5px solid white;
   }
   .enter_input {
