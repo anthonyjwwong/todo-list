@@ -1,0 +1,227 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #40c6e6;
+}
+.input_area {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.input_area h1 {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid white;
+}
+/** Input **/
+.todo_input {
+  width: 100%;
+  font-size: 0.8em;
+  text-align: left;
+  outline: none;
+  border: 2px solid white;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+  height: 6vh;
+
+}
+
+/** Input Button **/
+.enter_input {
+  width: 101.5%;
+  font-size: 1em;
+  background: inherit;
+  outline: none;
+  color: white;
+  border: 2px solid white;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: lighter;
+}
+
+
+
+.fa-plus {
+  font-size: 0.8em;
+  float: right;
+  padding-right: 5px;
+  padding-top: 6px;
+  }
+
+
+#main {
+  text-align: center;
+}
+
+.display {
+  display: none;
+}
+
+li {
+  width: 98%;
+  list-style-type: none;
+  border-bottom: 3px solid #40c6e6;
+  background: white;
+  text-align: left;
+  color: #40c6e6;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 0;
+}
+ul {
+  width: 98%;
+  margin: 0 auto;
+  padding-top: 10px;
+  height: 70vh;
+  padding-left: 0;
+}
+
+.deleteButton {
+  float: right;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.displayNone {
+  display: none;
+}
+/*************************
+        media query
+*************************/
+@media only screen and (min-width: 321px) {
+  .todo_input {
+    margin: 0;
+    width: 100.3%;
+    border: 1.5px solid white;
+  }
+  .enter_input {
+    width: 101.2%;
+    height: 7vh;
+  }
+
+
+  }
+
+  @media only screen and (min-width: 600px) {
+    .input_area h1 {
+      font-size: 3em;
+    }
+
+    .todo_input {
+      font-size: 1.5em;
+      width: 100%;
+    }
+
+    .enter_input {
+      font-size: 1.5em;
+      width: 100.5%;
+    }
+
+    li {
+      font-size: 2em;
+    }
+
+  }
+
+    @media only screen and (min-width: 1024px) {
+      .enter_input {
+        height: 5vh;
+      }
+    }
+
+
+
+
+    @media only screen and (min-width: 1140px){
+      .enter_input {
+
+        height: 5vh;
+        width: 100.3%;
+      }
+    }
+
+
+    @media only screen and (min-width: 320px) and (max-width: 500px) and (orientation: landscape) {
+      .enter_input {
+        height: 10vh;
+        width: 101%;
+      }
+    }
+
+    @media only screen and (min-width: 501px) and (max-width: 1020px) and (orientation: landscape) {
+      .enter_input {
+        height: 10vh;
+        width: 100.8%;
+      }
+    }
+
+    @media only screen and (min-width: 640px) and (min-height: 320px) {
+      .input_area h1 {
+        font-size: 2em;
+        width: 99.8%;
+      }
+      .enter_input {
+        font-size: 1em;
+        width: 100.6%;
+      }
+
+      .todo_input {
+        font-size: 1em;
+      }
+
+      li {
+        font-size: 1em;
+      }
+    }
+
+    @media only screen and (min-width: 700px) {
+      .enter_input {
+        font-size: 0.8em;
+        width: 100.5%;
+      }
+
+      .todo_input {
+        font-size: 0.8em;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .input_area h1 {
+        font-size: 3em;
+        width: 59%;
+      }
+
+      .enter_input {
+        max-width: 100%;
+        font-size: 2em;
+        height: 7vh;
+        width: 59.3%;
+        font-weight: 300;
+      }
+
+      .todo_input {
+        max-width: 100%;
+        font-size: 1.3em;
+        width: 59.2%;
+
+      }
+
+      li {
+        font-size: 2em;
+      }
+    }
+
+
+    @media only screen and (min-width: 1441px) {
+      li {
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
