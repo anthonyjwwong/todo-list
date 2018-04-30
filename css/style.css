@@ -33,7 +33,7 @@ body {
 
 /** Input Button **/
 .enter_input {
-  width: 101.5%;
+  width: 40.5%;
   font-size: 1em;
   background: inherit;
   outline: none;
@@ -43,6 +43,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   font-weight: lighter;
+  margin-top: 10px;
 }
 
 
