@@ -7,6 +7,13 @@ body {
   margin: 0 auto;
 }
 
+.input_area_hidden{
+  width: 90vw;
+  margin: 10px 0 10px;
+  border: 2px solid white;
+  padding: 10px 0 10px;
+}
+
 .input_area h1 {
   width: 100%;
   margin: 0 auto;
@@ -20,7 +27,7 @@ body {
 }
 /** Input **/
 .todo_input {
-  width: 100%;
+  width: 90%;
   font-size: 0.8em;
   text-align: left;
   outline: none;
@@ -33,7 +40,8 @@ body {
 
 /** Input Button **/
 .enter_input {
-  width: 100%
+  margin-top: 10px;
+  width: 90%;
   font-size: 1em;
   background: inherit;
   outline: none;
@@ -43,7 +51,6 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   font-weight: lighter;
-
 }
 
 
@@ -99,13 +106,13 @@ ul {
 @media only screen and (min-width: 321px) {
   .todo_input {
     margin: 0;
-    width: 98%;
+    width: 90%;
     border: 2px solid white;
-    padding: 0;
   }
   .enter_input {
-    width: 101.5%;
+    width: 90%;
     height: 7vh;
+    padding: 0;
   }
 
 
@@ -118,12 +125,12 @@ ul {
 
     .todo_input {
       font-size: 1.5em;
-      width: 100%;
+      width: 90%;
     }
 
     .enter_input {
       font-size: 1.5em;
-      width: 100.5%;
+      width: 90%;
     }
 
     li {
@@ -145,7 +152,7 @@ ul {
       .enter_input {
 
         height: 5vh;
-        width: 100.3%;
+        width: 90%;
       }
     }
 
@@ -153,25 +160,29 @@ ul {
     @media only screen and (min-width: 320px) and (max-width: 500px) and (orientation: landscape) {
       .enter_input {
         height: 10vh;
-        width: 101%;
+        width:90%;
       }
     }
 
     @media only screen and (min-width: 501px) and (max-width: 1020px) and (orientation: landscape) {
       .enter_input {
-        height: 10vh;
-        width: 100.8%;
+        height: 11vh;
+        width: 90%;
+      }
+      .todo_input {
+        width: 90%;
+        height: 8vh;
       }
     }
 
     @media only screen and (min-width: 640px) and (min-height: 320px) {
       .input_area h1 {
         font-size: 2em;
-        width: 99.8%;
+        width: 90%;
       }
       .enter_input {
         font-size: 1em;
-        width: 100.6%;
+        width: 90%;
       }
 
       .todo_input {
@@ -185,12 +196,16 @@ ul {
 
     @media only screen and (min-width: 700px) {
       .enter_input {
-        font-size: 0.8em;
-        width: 100.5%;
+        font-size: 1.3em;
+        width: 90%;
       }
 
       .todo_input {
-        font-size: 0.8em;
+        font-size: 1.3em;
+
+      }
+      li {
+        font-size: 1.3em;
       }
     }
 
@@ -204,14 +219,14 @@ ul {
         max-width: 100%;
         font-size: 2em;
         height: 7vh;
-        width: 59.3%;
+        width: 90%;
         font-weight: 300;
       }
 
       .todo_input {
-        max-width: 100%;
+        max-width:90%;
         font-size: 1.3em;
-        width: 59.2%;
+        width: 90%;
 
       }
 
@@ -225,5 +240,17 @@ ul {
       li {
         width: 60%;
         margin: 0 auto;
+        font-size: 1.4em;
+
+      }
+
+      .enter_input {
+        padding-left: 1%;
+        font-size: 1.5em;
+      }
+
+      .todo_input {
+        padding-left: 1%;
+        width: 58.2%;
       }
     }
