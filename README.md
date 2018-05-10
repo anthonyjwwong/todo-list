@@ -6,4 +6,5 @@
 
 ## Usaage
 This is a simple todo list that holds your todo 
+<br>
 https://anthonyjwwong.github.io/todo-list/
