@@ -1,21 +1,20 @@
 const input = document.querySelector('.todo_input');
+const button = document.querySelector('.input_button');
 const list = document.querySelector('.todo_holder');
-const button = document.querySelector('.enter_input');
 const display = document.querySelector('.fa-plus');
-const displayImage = document.querySelector('.input_area_hidden');
-let index = 0;
-
+const displayArea = document.querySelector('.input_area');
 let view = {
   listEle: ['li', 'span'],
+
   createElement(text) {
-    //creates both the li and span.
+    //This creates the li and span
     let li = document.createElement(this.listEle[0]);
     let deleteButton = document.createElement(this.listEle[1]);
-    //creates a class for reference in css
+    //creates a class for reference in css//
     deleteButton.classList.add('deleteButton');
-    //X will be the delete button
+    //X will be the delete button//
     let deleteContent = document.createTextNode('x');
-    //append everything
+    //append//
     deleteButton.appendChild(deleteContent);
     li.appendChild(deleteButton);
     li.appendChild(text);
@@ -24,37 +23,37 @@ let view = {
 }
 
 let todo = {
-  addTodo() {
-    //creating a content,
+  addTodos() {
+    //creating a content//
     let content = document.createTextNode(input.value);
-    //create the elements and append the content//
+    //Create the element and append the content//
     view.createElement(content);
-    input.value = '';
+    input.value="";
   },
-  deleteTodo(e) {
-     e.target.parentNode.parentNode.removeChild(e.target.parentNode);
+  deleteTodos(e) {
+    //This removes the span that was clicked for the 'X'
+    //Targets the parent node for the 'X'
+    e.target.parentNode.parentNode.removeChild(e.target.parentNode);
   }
-
 }
 
-
-
-
 button.addEventListener('click', function() {
-    if (input.value.length === 0) {
-      alert('You have to enter something');
-    } else {
-    todo.addTodo();
+  if(input.value.length === 0) {
+    alert('Please Enter a todo');
+  } else {
+    todo.addTodos();
   }
-});
+})
 
 list.addEventListener('click', function(e) {
-  let span = "span.deleteButton";
-  if (e.target && e.target.matches(span)) {
-    todo.deleteTodo(e);
+
+  let span="span.deleteButton";
+
+  if(e.target && e.target.matches(span)) {
+    todo.deleteTodos(e);
   }
-});
+})
 
 display.addEventListener('click', function() {
-  displayImage.classList.toggle('displayNone');
-});
+  displayArea.classList.toggle('displayNone');
+})
