@@ -25,26 +25,29 @@ li {
   margin: 5px auto;
   font-weight: 300;
   outline: none;
+  
 }
 
 .input_area {
-
+  outline: none;
   padding: 10px 5px 10px;
 }
 
 
 ul {
   padding: 0 ;
+  outline: none;
 }
 
 input {
   padding: 5px 10px 5px;
   font-family: 'Ubuntu', sans-serif;
-  outline: 0;
+  outline:none;
   border: 0;
   background: transparent;
   border-bottom: 1px solid white;
   color: white;
+
 }
 
 ::placeholder {
