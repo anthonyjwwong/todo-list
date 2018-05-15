@@ -1,261 +1,119 @@
 body {
-  font-family: 'Montserrat', sans-serif;
-  background: #40c6e6;
-}
-.input_area {
-  max-width: 90vw;
-  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+  background: #A7CAEF;
+  color: white;
 }
 
-.input_area_hidden{
-  width: 90vw;
-  margin: 10px 0 10px;
- 
-  padding: 10px 0 10px;
-}
-
-.input_area h1 {
-  width: 100%;
-  margin: 0 auto;
+header h1 {
   text-align: center;
-  font-size: 1.5em;
   font-weight: 300;
   color: white;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: 2px solid white;
-}
-/** Input **/
-.todo_input {
-  width: 90%;
-  font-size: 0.8em;
-  text-align: left;
-  outline: none;
-  border: 2px solid white;
-  font-family: 'Montserrat', sans-serif;
-  margin-top: 0;
-  height: 6vh;
-
 }
 
-/** Input Button **/
-.enter_input {
-  margin-top: 10px;
-  width: 90%;
-  font-size: 1em;
-  background: inherit;
-  outline: none;
-  color: white;
-  border: 2px solid white;
-  height: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-weight: lighter;
-}
-
-
-
-.fa-plus {
-  font-size: 0.8em;
-  float: right;
-  padding-right: 5px;
-  padding-top: 6px;
-  }
-
-
-#main {
+.input_area {
   text-align: center;
-}
-
-.display {
-  display: none;
-}
-
-li {
-  width: 98%;
-  list-style-type: none;
-  border-bottom: 3px solid #40c6e6;
-  background: white;
-  text-align: left;
-  color: #40c6e6;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 0;
-}
-ul {
-  width: 98%;
-  margin: 0 auto;
-  padding-top: 10px;
-  height: 70vh;
-  padding-left: 0;
 }
 
 .deleteButton {
-  float: right;
-  text-transform: uppercase;
-  margin-right: 10px;
+  float:right;
+}
+
+li {
+  list-style: none;
+  width: 74vw;
+  padding: 5px 10px 7px;
+  margin: 5px auto;
+  font-weight: 300;
+}
+
+.input_area {
+
+  padding: 10px 5px 10px;
+}
+
+
+ul {
+  padding: 0 ;
+}
+
+input {
+  padding: 5px 10px 5px;
+  font-family: 'Ubuntu', sans-serif;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+button {
+  padding: 5px 10px 5px;
+  font-family: 'Ubuntu', sans-serif;
+  background: inherit;
+  border: 1px solid white;
+  color: white;
 }
 
 .displayNone {
   display: none;
 }
+
+.fa-plus {
+  font-size: 15px;
+}
+
+
+
 /*************************
-        media query
-*************************/
+       Media query
+************************/
+
 @media only screen and (min-width: 321px) {
-  .todo_input {
-    margin: 0;
-    width: 90%;
-    border: 2px solid white;
-  }
-  .enter_input {
-    width: 90%;
-    height: 7vh;
-    padding: 0;
+  li {
+    font-size: 1.5em;
   }
 
-
+  button {
+    font-size: 1em;
   }
+
+  input {
+    font-size: 1em;
+  }
+}
 
   @media only screen and (min-width: 600px) {
-    .input_area h1 {
-      font-size: 3em;
-    }
-
-    .todo_input {
-      font-size: 1.5em;
-      width: 90%;
-    }
-
-    .enter_input {
-      font-size: 1.5em;
-      width: 90%;
-    }
-
     li {
       font-size: 2em;
     }
 
+    button {
+      font-size: 1.8em;
+    }
+
+    input {
+      font-size: 1.8em;
+    }
+
   }
 
-    @media only screen and (min-width: 1024px) {
-      .enter_input {
-        height: 5vh;
-      }
-    }
 
-
-
-
-    @media only screen and (min-width: 1140px){
-      .enter_input {
-
-        height: 5vh;
-        width: 90%;
-      }
-    }
-
-
-    @media only screen and (min-width: 320px) and (max-width: 500px) and (orientation: landscape) {
-      .enter_input {
-        height: 10vh;
-        width:90%;
-      }
-    }
-
-    @media only screen and (min-width: 501px) and (max-width: 1020px) and (orientation: landscape) {
-      .enter_input {
-        height: 11vh;
-        width: 90%;
-      }
-      .todo_input {
-        width: 90%;
-        height: 8vh;
-      }
-    }
-
-    @media only screen and (min-width: 640px) and (min-height: 320px) {
-      .input_area h1 {
-        font-size: 2em;
-        width: 90%;
-      }
-      .enter_input {
-        font-size: 1em;
-        width: 90%;
-      }
-
-      .todo_input {
-        font-size: 1em;
-      }
-
-      li {
-        font-size: 1em;
-      }
-    }
-
-    @media only screen and (min-width: 700px) {
-      .enter_input {
-        font-size: 1.3em;
-        width: 90%;
-      }
-
-      .todo_input {
-        font-size: 1.3em;
-
-      }
-      li {
-        font-size: 1.3em;
-      }
-    }
 
     @media only screen and (min-width: 1200px) {
-      .input_area h1 {
-        font-size: 3em;
-        width: 59%;
-      }
-
-      .enter_input {
-        max-width: 100%;
-        font-size: 2em;
-        height: 7vh;
-        width: 90%;
-        font-weight: 300;
-      }
-
-      .todo_input {
-
-        font-size: 1.3em;
-        width: 90%;
-
-      }
-
       li {
-        font-size: 2em;
+        width: 40vw;
       }
     }
 
-
-    @media only screen and (min-width: 1441px) {
-      li {
-        width: 60%;
-        margin: 0 auto;
-        font-size: 1.4em;
-
-      }
-
-      .input_area_hidden {
-        width: 50%;
-        margin: 10px auto;
-      }
-      .enter_input {
-        padding-left: 1%;
-        font-size: 1.5em;
-        width: 58.2%;
-      }
-
-      .todo_input {
-        padding-left: 1%;
-        width: 58.2%;
-      }
-    }
