@@ -12,18 +12,18 @@ What I've learned so far, and for people who want to learn about local Storage.
 
 localStorage.setItem("Key", "value);
 
-Key refers to the name that you want it to be saved under in your localStorage, where as value will the actual item itself.
+// Key refers to the name that you want it to be saved under in your localStorage, where as value will the actual item itself.
 
-LocalStorage only accepts string as of now, so if you want to input an array into localStorage, you'll have to turn it into a string first.
+// LocalStorage only accepts string as of now, so if you want to input an array into localStorage, you'll have to turn it into a string first.
 
 Ex. 
 let arr = [1,2,3];
 
 localStorage.setItem("numbers", JSON.stringify(arr));
 
-JSON.stringify changes the arr we have here into a string. "[1,2,3]"
+//JSON.stringify changes the arr we have here into a string. "[1,2,3]"
 
-and to get it out, JSON.parse changes it back into an array.
+//and to get it out, JSON.parse changes it back into an array.
 
 let storedArr = JSON.parse(localStorage.getItem("numbers");
 
