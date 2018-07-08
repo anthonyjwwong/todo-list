@@ -15,7 +15,6 @@ What I've learned so far, and for people who want to learn about local Storage.
 localStorage.setItem("Key", "value);
 
 *Key refers to the name that you want it to be saved under in your localStorage, where as value will be the actual item itself.*
-
 *LocalStorage only accepts string as of now, so if you want to input an array into localStorage, you'll have to turn it into a string first.*
 
 Ex. 
@@ -24,7 +23,8 @@ localStorage.setItem("numbers", JSON.stringify(arr));
 
 
 <br>
-*JSON.stringify changes the arr we have here into a string.* "[1,2,3]"
+*JSON.stringify changes the arr we have here into a string.* 
+"[1,2,3]"
 
 ### To retrieve item from local Storage
 
