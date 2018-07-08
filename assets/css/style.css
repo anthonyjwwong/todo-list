@@ -84,7 +84,7 @@ button {
   font-size: 15px;
 }
 
-deleteButton:hover {
+.deleteButton{
   cursor: pointer;
 }
 
