@@ -20,7 +20,7 @@ localStorage.setItem("Key", "value);
 <br>
 <br>
 Ex. 
-let arr = [1,2,3];
+let arr = [1,2,3];<br>
 localStorage.setItem("numbers", JSON.stringify(arr));
 
 <br>
