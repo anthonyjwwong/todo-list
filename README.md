@@ -25,6 +25,7 @@ localStorage.setItem("numbers", JSON.stringify(arr));
 
 <br>
 <br>
+
 ### JSON.stringify(ele) 
 JSON.stringify(arr) turns the array into a string.
 
