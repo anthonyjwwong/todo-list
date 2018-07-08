@@ -22,7 +22,7 @@ let arr = [1,2,3];
 localStorage.setItem("numbers", JSON.stringify(arr));
 
 
-<br>
+
 *JSON.stringify changes the arr we have here into a string.* 
 "[1,2,3]"
 
