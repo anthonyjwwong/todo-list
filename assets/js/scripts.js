@@ -76,7 +76,7 @@ let todoFunctions = {
             li = view.createElement(ele);
         })
         list.appendChild(li);
-        console.log(li);
+        input.value = "";
     },
     
     delete(e) {
