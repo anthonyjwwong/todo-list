@@ -7,7 +7,6 @@
 
 ## Why?
 
-I made this todo-list app to test out the usage of local Storage.<br>
 What I've learned so far, and for people who want to learn about local Storage.
 
 ### To store item in your local Storage
