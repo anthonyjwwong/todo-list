@@ -21,12 +21,10 @@ localStorage.setItem("Key", "value);
 Ex. 
 let arr = [1,2,3];<br>
 localStorage.setItem("numbers", JSON.stringify(arr));
-
 <br>
 <br>
 
-### JSON.stringify(ele) 
-JSON.stringify(arr) turns the array into a string.
+JSON.stringify(arr) <- this converts arr into a string. Ex. [1,2,3] = "[1,2,3]";
 
 ### To retrieve item from local Storage
 
